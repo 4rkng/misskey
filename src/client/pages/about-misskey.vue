@@ -14,6 +14,7 @@
 			{{ $ts._aboutMisskey.about }}
 		</section>
 		<FormGroup>
+		
 			<FormLink to="https://github.com/4rkng/misskey" external>
 				<template #icon><Fa :icon="faCode"/></template>
 				{{ $ts._aboutMisskey.source }}

@@ -453,7 +453,7 @@ signinHistory: "ログイン履歴"
 disableAnimatedMfm: "動きのあるMFMを無効にする"
 doing: "しょーる"
 category: "カテゴリ"
-tags: "タグ"の
+tags: "タグ"
 docSource: "このドキュメントのソース"
 createAccount: "アカウントを作成"
 existingAccount: "既存のアカウント"

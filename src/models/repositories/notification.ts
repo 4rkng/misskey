@@ -2,14 +2,17 @@ import { EntityRepository, In, Repository } from 'typeorm';
 import { Users, Notes, UserGroupInvitations, AccessTokens, NoteReactions } from '../index';
 import { Notification } from '@/models/entities/notification';
 import { awaitAll } from '@/prelude/await-all';
-import { SchemaType } from '@/misc/schema';
+import { Packed } from '@/misc/schema';
 import { Note } from '@/models/entities/note';
 import { NoteReaction } from '@/models/entities/note-reaction';
 import { User } from '@/models/entities/user';
 import { aggregateNoteEmojis, prefetchEmojis } from '@/misc/populate-emojis';
 import { notificationTypes } from '@/types';
+<<<<<<< HEAD
 
 export type PackedNotification = SchemaType<typeof packedNotificationSchema>;
+=======
+>>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 
 @EntityRepository(Notification)
 export class NotificationRepository extends Repository<Notification> {
@@ -20,7 +23,7 @@ export class NotificationRepository extends Repository<Notification> {
 				myReactions: Map<Note['id'], NoteReaction | null>;
 			};
 		}
-	): Promise<PackedNotification> {
+	): Promise<Packed<'Notification'>> {
 		const notification = typeof src === 'object' ? src : await this.findOneOrFail(src);
 		const token = notification.appAccessTokenId ? await AccessTokens.findOneOrFail(notification.appAccessTokenId) : null;
 
@@ -136,7 +139,11 @@ export const packedNotificationSchema = {
 		},
 		user: {
 			type: 'object' as const,
+<<<<<<< HEAD
 			ref: 'User',
+=======
+			ref: 'User' as const,
+>>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 			optional: true as const, nullable: true as const,
 		},
 		userId: {
@@ -146,7 +153,11 @@ export const packedNotificationSchema = {
 		},
 		note: {
 			type: 'object' as const,
+<<<<<<< HEAD
 			ref: 'Note',
+=======
+			ref: 'Note' as const,
+>>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 			optional: true as const, nullable: true as const,
 		},
 		reaction: {

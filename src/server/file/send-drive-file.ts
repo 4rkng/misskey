@@ -13,6 +13,7 @@ import { downloadUrl } from '@/misc/download-url';
 import { detectType } from '@/misc/get-file-info';
 import { convertToJpeg, convertToPngOrJpeg } from '@/services/drive/image-processor';
 import { GenerateVideoThumbnail } from '@/services/drive/generate-video-thumbnail';
+import { StatusError } from '@/misc/fetch';
 
 //const _filename = fileURLToPath(import.meta.url);
 const _filename = __filename;
@@ -83,9 +84,15 @@ export default async function(ctx: Koa.Context) {
 				ctx.set('Content-Type', image.type);
 				ctx.set('Cache-Control', 'max-age=31536000, immutable');
 			} catch (e) {
+<<<<<<< HEAD
 				serverLogger.error(e.statusCode);
 
 				if (typeof e.statusCode === 'number' && e.statusCode >= 400 && e.statusCode < 500) {
+=======
+				serverLogger.error(`${e}`);
+
+				if (e instanceof StatusError && e.isClientError) {
+>>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 					ctx.status = e.statusCode;
 					ctx.set('Cache-Control', 'max-age=86400');
 				} else {

@@ -7,13 +7,6 @@
 
 -->
 
-## 12.x.x (unreleased)
-
-### Improvements
-- リモートユーザーのDeleteアクティビティに対応
-
-### Bugfixes
-
 ## 12.90.1 (2021/09/05)
 
 ### Bugfixes

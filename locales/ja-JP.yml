@@ -790,8 +790,6 @@ pubSub: "Pub/Subのアカウント"
 lastCommunication: "直近の通信"
 resolved: "解決済み"
 unresolved: "未解決"
-<<<<<<< HEAD
-=======
 itsOn: "オンになっています"
 itsOff: "オフになっています"
 emailRequiredForSignup: "アカウント登録にメールアドレスを必須にする"
@@ -806,7 +804,6 @@ _signup:
   almostThere: "ほとんど完了です"
   emailAddressInfo: "あなたが使っているメールアドレスを入力してください。"
   emailSent: "入力されたメールアドレス({email})宛に確認のメールが送信されました。メールに記載されたリンクにアクセスすると、アカウントの作成が完了します。"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 
 _accountDelete:
   accountDelete: "アカウントの削除"

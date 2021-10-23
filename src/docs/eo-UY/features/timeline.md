@@ -14,23 +14,6 @@
 全てのローカルユーザーの「ホーム」指定されていない投稿と、サーバーに届いた全てのリモートユーザーの「ホーム」指定されていない投稿が流れます。GTLと略されます。
 
 ## 比較
-<<<<<<< HEAD
-| ソース          |           |       | Templinio |         |         |
-| ------------ | --------- | ----- | --------- | ------- | ------- |
-| Uzantoj      | Videbleco | Hejma | Loka      | Sociala | Malloka |
-| ローカル (フォロー)  | Publikigi | ✔     | ✔         | ✔       | ✔       |
-|              | Hejma     | ✔     |           | ✔       |         |
-|              | Sekvantoj | ✔     | ✔         | ✔       | ✔       |
-| リモート (フォロー)  | Publikigi | ✔     |           | ✔       | ✔       |
-|              | Hejma     | ✔     |           | ✔       |         |
-|              | Sekvantoj | ✔     |           | ✔       | ✔       |
-| ローカル (未フォロー) | Publikigi |       | ✔         | ✔       | ✔       |
-|              | Hejma     |       |           |         |         |
-|              | Sekvantoj |       |           |         |         |
-| リモート (未フォロー) | Publikigi |       |           |         | ✔       |
-|              | Hejma     |       |           |         |         |
-|              | Sekvantoj |       |           |         |         |
-=======
 | ソース                   |           |       | Templinio |         |         |
 | --------------------- | --------- | ----- | --------- | ------- | ------- |
 | Uzantoj               | Videbleco | Hejma | Loka      | Sociala | Malloka |
@@ -46,4 +29,3 @@
 | Transaj (ne sekvataj) | Publika   |       |           |         | ✔       |
 |                       | Nur hejma |       |           |         |         |
 |                       | Sekvantoj |       |           |         |         |
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb

@@ -208,18 +208,6 @@ export default defineComponent({
 				'hcaptcha-response': this.hCaptchaResponse,
 				'g-recaptcha-response': this.reCaptchaResponse,
 			}).then(() => {
-<<<<<<< HEAD
-				return os.api('signin', {
-					username: this.username,
-					password: this.password
-				}).then(res => {
-					this.$emit('signup', res);
-
-					if (this.autoSet) {
-						return login(res.i);
-					}
-				});
-=======
 				if (this.meta.emailRequiredForSignup) {
 					os.dialog({
 						type: 'success',
@@ -239,7 +227,6 @@ export default defineComponent({
 						}
 					});
 				}
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 			}).catch(() => {
 				this.submitting = false;
 				this.$refs.hcaptcha?.reset?.();

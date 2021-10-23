@@ -21,11 +21,7 @@ Essayez les solutions proposées ci-dessous :
 - activer l'option « Réduire les animations dans l'interface » dans les paramètres du client
 - désactiver l'option « Utiliser un effet de flou pour les modals » dans les paramètres du client
 - activer l'accélération matérielle dans les paramètres de votre navigateur
-<<<<<<< HEAD
-- お使いのデバイスのスペックを上げる
-=======
 - effectuer les mises  à jour de votre appareil.
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 
 ## Certaines parties de l'interface ne s'affichent pas correctement (arrière-plan transparent, etc.)
 Cela peut être lié au système de mise en cache du thème lorsqu'une mise à jour visant à améliorer l'interface a eu lieu. Pour résoudre le problème, sélectionnez la touche « Vider le cache » dans les paramètres du client.

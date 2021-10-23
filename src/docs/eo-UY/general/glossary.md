@@ -52,11 +52,7 @@ todo
 ## Emoĵioj personecigitaj
 サーバーで用意された絵文字。カスタム絵文字ではない通常の絵文字は「Unicode絵文字」と区別して呼ばれる。
 
-<<<<<<< HEAD
-## コントロールパネル
-=======
 ## Ŝaltpodio
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 インスタンスの設定画面のこと。
 
 ## Servilo
@@ -78,26 +74,15 @@ Funkcio ebligas al uzantoj administri dosierojn kiujn ili alŝutis al Misskey.Ri
 Enpoŝtigaĵoj en Misskey kiuj konsistas el teksto, dosiero, balotujo, ktp.Rigardu por sciu pli tie[.](../features/note)
 
 ## Miskiisto
-<<<<<<< HEAD
-Misskeyを使う人のこと。
-=======
 Uzuloj de Misskey.
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 
 ## Kontrolisto
 スパムの凍結およびサイレンスや不適切な投稿の削除など、コミュニティ運営に関する権限を持つユーザー。
 
-<<<<<<< HEAD
-## Transa/fora
-他サーバーのことを指します。リモートユーザーといったように接頭辞としても使われます。ローカルの逆です。
-
-## Kunfederado
-=======
 ## Transa, Surloka
 他サーバーのことを指します。リモートユーザーといったように接頭辞としても使われます。ローカルの逆です。
 
 ## Federado
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 サーバー上で作成された情報が他のサーバーに伝わること。
 
 ## Loka

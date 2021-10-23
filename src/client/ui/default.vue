@@ -147,8 +147,6 @@ export default defineComponent({
 					}
 				}, '*');
 			}, { passive: true });
-<<<<<<< HEAD
-=======
 			window.addEventListener('touchmove', ev => {
 				this.$refs.live2d.contentWindow.postMessage({
 					type: 'moveCursor',
@@ -158,7 +156,6 @@ export default defineComponent({
 					}
 				}, '*');
 			}, { passive: true });
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 		}
 	},
 

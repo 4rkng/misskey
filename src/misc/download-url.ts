@@ -2,11 +2,7 @@ import * as fs from 'fs';
 import * as stream from 'stream';
 import * as util from 'util';
 import got, * as Got from 'got';
-<<<<<<< HEAD
-import { httpAgent, httpsAgent } from './fetch';
-=======
 import { httpAgent, httpsAgent, StatusError } from './fetch';
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 import config from '@/config/index';
 import * as chalk from 'chalk';
 import Logger from '@/services/logger';
@@ -41,10 +37,7 @@ export async function downloadUrl(url: string, path: string) {
 			http: httpAgent,
 			https: httpsAgent,
 		},
-<<<<<<< HEAD
-=======
 		http2: false,	// default
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 		retry: 0,
 	}).on('response', (res: Got.Response) => {
 		if ((process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test') && !config.proxy && res.ip) {
@@ -53,34 +46,6 @@ export async function downloadUrl(url: string, path: string) {
 				req.destroy();
 			}
 		}
-<<<<<<< HEAD
-
-		const contentLength = res.headers['content-length'];
-		if (contentLength != null) {
-			const size = Number(contentLength);
-			if (size > maxSize) {
-				logger.warn(`maxSize exceeded (${size} > ${maxSize}) on response`);
-				req.destroy();
-			}
-		}
-	}).on('downloadProgress', (progress: Got.Progress) => {
-		if (progress.transferred > maxSize) {
-			logger.warn(`maxSize exceeded (${progress.transferred} > ${maxSize}) on downloadProgress`);
-			req.destroy();
-		}
-	}).on('error', (e: any) => {
-		if (e.name === 'HTTPError') {
-			const statusCode = e.response?.statusCode;
-			const statusMessage = e.response?.statusMessage;
-			e.name = `StatusError`;
-			e.statusCode = statusCode;
-			e.message = `${statusCode} ${statusMessage}`;
-		}
-	});
-
-	await pipeline(req, fs.createWriteStream(path));
-
-=======
 
 		const contentLength = res.headers['content-length'];
 		if (contentLength != null) {
@@ -107,7 +72,6 @@ export async function downloadUrl(url: string, path: string) {
 		}
 	}
 
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 	logger.succ(`Download finished: ${chalk.cyan(url)}`);
 }
 

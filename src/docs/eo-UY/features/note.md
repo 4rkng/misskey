@@ -34,11 +34,7 @@ Contents Warningの略で、ノートの内容を、閲覧者の操作なしに�
 ### Nur al sekvantoj
 Viaj notoj estos senditaj nur al viaj sekvantoj.La noto aperos sur ĉiuj templinioj de viaj sekvantoj.
 
-<<<<<<< HEAD
-### Rekta
-=======
 ### Rekte
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 指定したユーザーに対してのみノートを公開します。指定したユーザーの全てのタイムラインに流れます。
 
 ### 「ローカルのみ」オプション
@@ -46,20 +42,12 @@ Viaj notoj estos senditaj nur al viaj sekvantoj.La noto aperos sur ĉiuj templin
 
 ### 公開範囲の比較
 <table>
-<<<<<<< HEAD
-    <tr><th></th><th>Publika</th><th>Hejma</th><th>Sekvantoj</th><th>Rekta</th></tr>
-=======
     <tr><th></th><th>Publika</th><th>Hejma</th><th>Nur al sekvantoj</th><th>Rekte</th></tr>
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
     <tr><th>フォロワーのLTL/STL/GTL</th><td>✔</td><td>✔</td><td>✔</td><td></td></tr>
     <tr><th>非フォロワーのLTL/STL/GTL</th><td>✔</td><td></td><td></td><td></td></tr>
 </table>
 
-<<<<<<< HEAD
-## Alpingli al la profilo
-=======
 ## Alpingli sur profilo
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 ノートをピン留めすると、ユーザーページに常にそのノートを表示しておくことができます。 ノートのメニューを開き、「ピン留め」を選択してピン留めできます。 複数のノートをピン留めできます。
 
 ## Observi

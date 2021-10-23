@@ -65,11 +65,7 @@ export class NoteRepository extends Repository<Note> {
 		return true;
 	}
 
-<<<<<<< HEAD
-	private async hideNote(packedNote: PackedNote, meId: User['id'] | null) {
-=======
 	private async hideNote(packedNote: Packed<'Note'>, meId: User['id'] | null) {
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 		// TODO: isVisibleForMe を使うようにしても良さそう(型違うけど)
 		let hide = false;
 

@@ -1,14 +1,8 @@
 ---
 _lang_: "Esperanto"
-<<<<<<< HEAD
-headlineMisskey: "Reto ligata per notoj"
-introMisskey: "Bonvenon! Misskey estas malfermitkoda malcentraliza mikrobloga servo.\nKreu \"noto\"n por diskonigu ke nun okazas, aŭ por dissendu pri vi. 📡\nPer la funkcio \"reago\", vi ankaŭ povas rapide esprimi vian senton pri ĉies noto. 👍\nEsploru novan mondon. 🚀"
-monthAndDay: "{day}a/{month}"
-=======
 headlineMisskey: "Jen la reto konektata de notoj"
 introMisskey: "Bonvenon! Misskey estas malfermitkoda malcentraliza etbloga servo.\nKreu \"noto\"n por paroli vian penson al iuj ĉirkaŭ vi. 📡\nLa funkcion \"reago\" ebligas esprimi rapide vian senton pri ies noto en Fediverso. 👍\nBonvole esploru novan mondon. 🚀"
 monthAndDay: "{{day}}/{{month}}"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 search: "Serĉi"
 notifications: "Sciigoj"
 username: "Uzantnomo"
@@ -29,11 +23,7 @@ otherSettings: "Aliaj agordoj"
 openInWindow: "Malfermi en fenestro"
 profile: "Profilo"
 timeline: "Templinio"
-<<<<<<< HEAD
-noAccountDescription: "Tiu uzanto ne skribis biografieton"
-=======
 noAccountDescription: "Neniu priskribo"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 login: "Ensaluti"
 loggingIn: "Ensalutado…"
 logout: "Elsaluti"
@@ -43,31 +33,18 @@ save: "Konservi"
 users: "Uzantoj"
 addUser: "Aldoni uzanton"
 favorite: "Preferi"
-<<<<<<< HEAD
-favorites: "Preferataĵoj"
-unfavorite: "Malpreferi"
-favorited: "Aldonita al preferataĵoj"
-cantFavorite: "Ne aldonita al preferataĵoj"
-pin: "Alpingli al la profilo"
-=======
 favorites: "Preferaĵoj"
 unfavorite: "Malpreferi"
 favorited: "Aldonita al via listo de preferaĵoj."
 alreadyFavorited: "Ĝi jam estis aldonita al via listo de preferaĵoj."
 cantFavorite: "Ne aldonita al via listo de preferaĵoj."
 pin: "Alpingli"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 unpin: "Depingli"
 copyContent: "Kopii enhavon"
 copyLink: "Kopii ligilon"
 delete: "Forviŝi"
-<<<<<<< HEAD
-deleteAndEdit: "Forviŝi kaj redakti"
-deleteAndEditConfirm: "Ĉu vi certas, ke vi volas forigi kaj redakti la noton? Ankaŭ ĉiuj reagoj, renotoj, kaj respondoj al ĝi foriĝos."
-=======
 deleteAndEdit: "Redakti foriginte"
 deleteAndEditConfirm: "Ĉu vi certas, ke vi volas forigi kaj redakti la noton? Tio forviŝos reagojn, plusendojn, kaj respondojn ĉiujn de ĝi."
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 addToList: "Aldoni al listo"
 sendMessage: "Sendi mesaĝon"
 copyUsername: "Kopii uzantnomon"
@@ -80,23 +57,14 @@ receiveFollowRequest: "Peto de sekvado estas ricevita"
 followRequestAccepted: "La peto de sekvado akceptita"
 mention: "Mencioj"
 mentions: "Al vi"
-<<<<<<< HEAD
-directNotes: "Notoj rektaj"
-=======
 directNotes: "Rekte senditaj"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 importAndExport: "Importi/eksporti"
 import: "Importi"
 export: "Eksporti"
 files: "Dosieroj"
 download: "Elŝuti"
-<<<<<<< HEAD
-driveFileDeleteConfirm: "Ĉu vi certas, ke vi volas forviŝi la dosieron \"{name}\"? Ankaŭ notoj kiuj enhavas ĝin forviŝiĝos."
-unfollowConfirm: "Ĉu vi certas, ke vi volas ne plu sekvi {name}'(o)n?"
-=======
 driveFileDeleteConfirm: "Ĉu vi certas, ke vi volas forviŝi la dosieron \"{name}\"? Pro tio forviŝiĝos ankaŭ la notoj kiuj enhavas ĝin."
 unfollowConfirm: "Ĉu vi certas, ke vi volas ĉesi sekvi {name}'(o)n?"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 lists: "Listoj"
 noLists: "Neniu listo"
 note: "Sendi"
@@ -117,16 +85,6 @@ followRequest: "Peti de sekvado"
 followRequests: "Petoj de sekvado"
 unfollow: "Ne plu sekvi"
 enterEmoji: "Entajpu emoĵion"
-<<<<<<< HEAD
-renote: "Fari renoton"
-unrenote: "Malfari renoton"
-renoted: "Renoto fariĝis."
-cantRenote: "Tiu noto ne estas resendebla."
-cantReRenote: "Renotoj ne estas renotebla."
-quote: "Citi"
-pinnedNote: "Alpinglita noto"
-pinned: "Alpingli al la profilo"
-=======
 renote: "Plusendi la noton"
 unrenote: "Malfari plusendadon"
 renoted: "Sukcese plusendita"
@@ -135,17 +93,12 @@ cantReRenote: "Plusendo de noto ne estas plusendebla."
 quote: "Citi"
 pinnedNote: "Alpinglita noto"
 pinned: "Alpingli"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 you: "Vi"
 clickToShow: "Klaku por malkaŝu"
 sensitive: "Enhavo ne estas deca por laborejo (NSFW)"
 add: "Aldoni"
 reaction: "Reagoj"
-<<<<<<< HEAD
-rememberNoteVisibility: "Rememori la videblecon de la noto laste sendita"
-=======
 rememberNoteVisibility: "Rememoru videblecon de la noto laste sendita "
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 attachCancel: "Deigi aldonaĵon"
 markAsSensitive: "Troviĝi NSFW"
 unmarkAsSensitive: "Ne troviĝi NSFW"
@@ -172,19 +125,11 @@ emojiName: "Nomo de emoĵio"
 emojiUrl: "URL de la emoĵio"
 addEmoji: "Aldoni emoĵion"
 settingGuide: "Agordaj rekomendoj"
-<<<<<<< HEAD
-cacheRemoteFiles: "Havi staplon de transaj dosieroj"
-flagAsBot: "Agordo por robota uzanto"
-flagAsCat: "Agordo de katiĝa uzanto"
-addAccount: "Aldoni konton"
-showOnRemote: "Vidi sur la fora nodo"
-=======
 cacheRemoteFiles: "Stapli transajn dosierojn"
 flagAsBot: "Agordo por robota uzanto"
 flagAsCat: "Agordo de katiĝa uzanto"
 addAccount: "Aldoni konton"
 showOnRemote: "Vidi ĉe la surloka nodo"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 general: "Ĝenerala"
 wallpaper: "Ekranfonoj"
 setWallpaper: "Apliki ekranfonon"
@@ -197,12 +142,6 @@ selectUser: "Elekti uzanton"
 recipient: "Ricevonto"
 annotation: "Komentarioj"
 federation: "Kunfederaĵo"
-<<<<<<< HEAD
-instances: "Nodo"
-perHour: "Po horo"
-perDay: "Po tago"
-blockThisInstance: "Bloki tiun nodon"
-=======
 instances: "Nodoj"
 latestRequestSentAt: "Lastatempa sendo"
 latestRequestReceivedAt: "Lastatempa ricevo"
@@ -212,7 +151,6 @@ perDay: "Po tago"
 blockThisInstance: "Bloki la nodon"
 operations: "Agoj"
 software: "Programaro"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 version: "Versio"
 metadata: "Metadatumoj"
 withNFiles: "{n} dosiero(j)"
@@ -220,10 +158,7 @@ monitor: "Monitoro"
 network: "Reto"
 disk: "Diskilo"
 instanceInfo: "Informoj pri la nodo"
-<<<<<<< HEAD
-=======
 statistics: "Statistikoj"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 clearCachedFiles: "Malplenigi la staplon"
 clearCachedFilesConfirm: "Ĉu vi certas, ke vi volas forviŝi ĉiujn transajn dosierojn en la staplo?"
 blockedInstances: "Blokitaj nodoj"
@@ -234,13 +169,9 @@ noUsers: "Sen uzantoj"
 editProfile: "Redakti profilon"
 noteDeleteConfirm: "Ĉu vi certas ke vi volas forviŝi la noton?"
 pinLimitExceeded: "Vi povas alpingli ne pli noton."
-<<<<<<< HEAD
-processing: "Prilaborado..."
-=======
 done: "Fini"
 processing: "Prilaborado…"
 preview: "Antaŭmontro"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 noCustomEmojis: "Neniu emoĵio"
 federating: "Nun kunfederanta"
 blocked: "Blokita"
@@ -249,15 +180,9 @@ all: "Ĉiuj"
 subscribing: "Abonata"
 publishing: "Al kiu dissendas"
 notResponding: "Alvokato ne disponeblas"
-<<<<<<< HEAD
-instanceFollowing: "Sekvatoj el la nodo"
-instanceFollowers: "Sekvantoj el la nodo"
-instanceUsers: "Uzantoj de ĉi tiu nodo"
-=======
 instanceFollowing: "Sekvatoj en la nodo"
 instanceFollowers: "Sekvantoj el la nodo"
 instanceUsers: "Uzantoj de tiu ĉi nodo"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 changePassword: "Ŝanĝi pasvorton"
 security: "Sekureco"
 retypedNotMatch: "Enigitoj ne estas konformaj."
@@ -291,11 +216,7 @@ nUsersRead: "Legita de {n} homoj"
 tos: "Kondiĉoj de uzado"
 start: "Komenciĝi"
 home: "Hejma"
-<<<<<<< HEAD
-remoteUserCaution: "Tiu infomoj estas ne tute ekzakta pro distanca uzanto."
-=======
 remoteUserCaution: "Ĉi tiuj infomoj ne estas tute ekzaktaj pro transa uzanto."
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 activity: "Aktiveco"
 images: "Bildoj"
 birthday: "Naskiĝdato"
@@ -333,10 +254,7 @@ unwatch: "Malobservi"
 accept: "Permesi"
 normal: "Normala"
 instanceName: "Nomo de la nodo"
-<<<<<<< HEAD
-=======
 instanceDescription: "Priskribo de la nodo "
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 maintainerName: "Nomo de la administranto"
 maintainerEmail: "Retpoŝto de la administranto"
 tosUrl: "URL de kondiĉoj de uzado"
@@ -344,11 +262,7 @@ thisYear: "Ĉi-jare"
 thisMonth: "Ĉi-monate"
 today: "Hodiaŭ"
 dayX: "{day}a"
-<<<<<<< HEAD
-monthX: "{month}"
-=======
 monthX: "La {month}a monato"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 yearX: "La jaro {year}"
 pages: "Paĝoj"
 connectService: "Konekti"
@@ -367,15 +281,12 @@ basicInfo: "Baza informo"
 pinnedUsers: "Alpinglita uzanto"
 pinnedPages: "Alpinglitaj paĝoj"
 pinnedNotes: "Alpinglita noto"
-<<<<<<< HEAD
-=======
 hcaptchaSiteKey: "Reteja ŝlosilo"
 hcaptchaSecretKey: "Sekreta ŝlosilo"
 recaptcha: "reCAPTCHA"
 enableRecaptcha: "Ebligi reCAPTCHA'on"
 recaptchaSiteKey: "Reteja ŝlosilo"
 recaptchaSecretKey: "Sekreta ŝlosilo"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 antennas: "Antenoj"
 manageAntennas: "Administri antenojn"
 name: "Nomo"
@@ -392,22 +303,15 @@ unsilenceConfirm: "Ĉu vi certas ke vi volas malmutigi la uzanton?"
 popularUsers: "Popularaj uzantoj"
 recentlyUpdatedUsers: "Uzantoj kiuj lastatempe sendis noton"
 recentlyRegisteredUsers: "Novaliĝintaj uzantoj"
-<<<<<<< HEAD
-exploreUsersCount: "Tiuj estas {count} uzantoj"
-=======
 recentlyDiscoveredUsers: "Lastatempe trovitaj uzantoj"
 exploreUsersCount: "Tio estas {count} uzantoj"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 exploreFediverse: "Esplori la Fediverson"
 popularTags: "Popularaj kradvortoj"
 userList: "Listoj"
 about: "Informoj"
 aboutMisskey: "Pri Misskey"
 administrator: "Administranto"
-<<<<<<< HEAD
-=======
 twoStepAuthentication: "Dua-faktora aŭtentiko"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 moderator: "Kontrolisto"
 nUsersMentioned: "{n} uzanto(j) menciis"
 securityKey: "Sekureca ŝlosilo"
@@ -438,11 +342,8 @@ enable: "Ebligi"
 next: "Sekve"
 retype: "Retajpu"
 noteOf: "Noto de {user}"
-<<<<<<< HEAD
-=======
 quoteAttached: "Kun citaĵo"
 quoteQuestion: "Ĉu vi aldonas citaĵon?"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 noMessagesYet: "Ankoraŭ neniu mesaĝo"
 newMessageExists: "Vi ricevis novan mesaĝon."
 onlyOneFileCanBeAttached: "Oni povas aldoni nur unu dosieron po mesaĝo."
@@ -503,11 +404,7 @@ output: "Elmeto"
 script: "Skripto"
 disablePagesScript: "Malebligi AiScripto en la paĝoj"
 deleteAllFiles: "Forviŝi ĉiujn dosierojn"
-<<<<<<< HEAD
-deleteAllFilesConfirm: "Ĉu vi certas, ke vi volas forviŝi ĉiujn viajn dosierojn?"
-=======
 deleteAllFilesConfirm: "Ĉu vi certas, ke vi volas forviŝi ĉiujn dosierojn?"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 userSuspended: "Ĉi tiu uzanto estas flostigita."
 userSilenced: "Ĉi tiu uzanto estas mutigita."
 menu: "Menuo"
@@ -520,17 +417,11 @@ poll: "Balotujo"
 useCw: "Kaŝi enhavo"
 enablePlayer: "Vidi videon"
 disablePlayer: "Fermi videon"
-<<<<<<< HEAD
-themeEditor: "Redaktilo de koloraroj"
-description: "Priskribe"
-describeFile: "Priskribi la bildon"
-=======
 expandTweet: "Disvolvi pepon"
 themeEditor: "Redaktilo de koloraroj"
 description: "Priskribo"
 describeFile: "Priskribi la bildon"
 enterFileDescription: "Priskribu"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 author: "Aŭtoro"
 manage: "Administro"
 plugins: "Kromaĵoj"
@@ -620,26 +511,17 @@ inUse: "Uzata"
 editCode: "Redakti kodon"
 emailNotification: "Sciigoj per retpoŝto"
 inChannelSearch: "Serĉi en kanalo"
-<<<<<<< HEAD
-useReactionPickerForContextMenu: "Oni malfermas reago-elektilon per dekstro-kliki"
-typingUsers: "{users} estas entajpanta(j)..."
-=======
 useReactionPickerForContextMenu: "Malfermi reago-elektilon per dekstro-klaki"
 typingUsers: "{users} nun entajpas…"
 clear: "Vakigi"
 goBack: "Reiri antaŭ"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 addDescription: "Priskribi"
 info: "Informoj"
 userInfo: "Informoj de uzanto"
 unknown: "Nekonata"
 online: "Surkonektita"
 offline: "Forkonektita"
-<<<<<<< HEAD
-instanceBlocking: "Blokado de nodoj"
-=======
 instanceBlocking: "Bloki specifajn nodojn"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 selectAccount: "Elekti konton"
 user: "Uzantoj"
 administration: "Administro"
@@ -730,13 +612,6 @@ _menuDisplay:
   hide: "Kaŝi"
 _wordMute:
   muteWords: "Silentigitaj vortoj"
-<<<<<<< HEAD
-  mutedNotes: "Silentigitaj notoj"
-_theme:
-  manage: "Administri kolorarojn"
-  code: "Kodo de koloraro"
-  description: "Priskribe"
-=======
   soft: "En kliento"
   hard: "En servilo"
   mutedNotes: "Silentigitaj notoj"
@@ -745,7 +620,6 @@ _theme:
   code: "Kolorara kodo"
   description: "Priskribo"
   color: "Koloro"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
   darken: "Malbrileco"
   lighten: "Brileco"
   keys:
@@ -754,12 +628,8 @@ _theme:
     link: "Ligilo"
     hashtag: "Kradvorto"
     mention: "Mencioj"
-<<<<<<< HEAD
-    renote: "Renoto"
-=======
     mentionMe: "Mencio al vi"
     renote: "Noto plusendita"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
     buttonBg: "Fono de butono"
     driveFolderBg: "Fono de dosierujo de la disko"
     messageBg: "Fono de retbabilejo"
@@ -794,16 +664,6 @@ _tutorial:
 _2fa:
   registerKey: "Nove registri ŝlosilon"
 _permissions:
-<<<<<<< HEAD
-  "write:account": "Redakti Informojn de via konto"
-  "read:blocks": "Vidi vian liston de uzantoj blokitaj"
-  "write:blocks": "Redakti vian liston de uzantoj blokitaj"
-  "read:drive": "Operacio por legi la informon de dosiero en via disko de Misskey"
-  "write:drive": "Ĉia operacio por skribi, forviŝi, aŭ alimaniere ŝanĝi la informon de dosiero en via disko de Misskey"
-  "read:favorites": "Vidi vian liston de preferataĵoj"
-  "write:favorites": "Redakti vian liston de preferataĵoj."
-  "read:following": "Vidi tiun kiun vi sekvas"
-=======
   "read:account": "Legado de la informoj pri via konto"
   "write:account": "Redatado de la informoj de via konto"
   "read:blocks": "Vidi vian liston de uzantoj blokitaj"
@@ -813,7 +673,6 @@ _permissions:
   "read:favorites": "Vidi vian liston de preferaĵoj"
   "write:favorites": "Redakti vian liston de preferaĵoj"
   "read:following": "Vidi la infomaciojn pri tio, kion vi sekvas"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
   "write:following": "Sekvi aŭ malsekvi alian uzanton"
   "read:messaging": "Vidi vian retbabiladon"
   "write:messaging": "Retbabilejo"
@@ -859,14 +718,6 @@ _poll:
   vote: "Baloti"
   closed: "Oni jam balotis ĝin"
 _visibility:
-<<<<<<< HEAD
-  publicDescription: "Via noto aperiĝos sur la templinio Malloka"
-  home: "Hejma"
-  homeDescription: "Elsendi nur sur la templinio Hejmo"
-  followers: "Sekvantoj"
-  followersDescription: "Nur al sekvantoj al mi"
-  specified: "Rekta"
-=======
   public: "Publika"
   publicDescription: "Via noto estos videbla de ĉiuj uzantoj"
   home: "Hejma"
@@ -875,7 +726,6 @@ _visibility:
   followersDescription: "Publiki nur al viaj sekvantoj"
   specified: "Rekte"
   specifiedDescription: "Montri nur al specifaj uzantoj"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
   localOnly: "Nur loka"
   localOnlyDescription: "Ne montri al transaj uzantoj"
 _postForm:
@@ -894,16 +744,6 @@ _exportOrImport:
   allNotes: "Ĉiuj notoj"
   followingList: "Sekvataj uzantoj"
   muteList: "Silentigoj"
-<<<<<<< HEAD
-  blockingList: "Blokitaj uzantoj"
-  userLists: "Listoj"
-_charts:
-  federationInstancesTotal: "Tuta numero de nodoj kunfederantaj"
-  usersTotal: "Tuta numero de uzantoj"
-  activeUsers: "Numero de aktivaj uzantoj"
-  notesTotal: "Tuta numero de notoj"
-  filesTotal: "Tuta numero de dosieroj"
-=======
   blockingList: "Blokitoj"
   userLists: "Listoj"
 _charts:
@@ -912,7 +752,6 @@ _charts:
   activeUsers: "La nombro de la uzantoj aktivaj"
   notesTotal: "La totala nombro de notoj"
   filesTotal: "La totala nombro de la dosieroj"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 _timelines:
   home: "Hejma"
   local: "Loka"
@@ -949,11 +788,7 @@ _pages:
   my: "Miaj paĝoj"
   featured: "Ravaĵoj"
   contents: "Enhavo"
-<<<<<<< HEAD
-  content: "Blokado de paĝo"
-=======
   content: "Paĝo en bloko"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
   url: "URL de paĝo"
   alignCenter: "Centrigi"
   chooseBlock: "Aldoni blokon"
@@ -965,14 +800,9 @@ _pages:
     button: "Butono"
     _post:
       canvasId: "Kanvasa identigilo"
-<<<<<<< HEAD
-    textInput: "Enigo el teksto"
-    textareaInput: "Enigo el teksto en multaj linioj"
-=======
     textInput: "Enmeto el teksto"
     textareaInput: "Enmeto el teksto en multaj linioj"
     numberInput: "Nombra enmeto"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
     _numberInput:
       text: "Titolo"
     _canvas:
@@ -1033,14 +863,10 @@ _pages:
     argVariables: "Eniga junto"
 _notification:
   fileUploaded: "La dosiero sukcese alŝutiĝis."
-<<<<<<< HEAD
-  youRenoted: "Renoto farita de {name}"
-=======
   youGotMention: "{name} mencis"
   youGotReply: "{name} respondis"
   youGotQuote: "{name} citis"
   youRenoted: "{name} plusendis"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
   youGotPoll: "{name} balotis"
   youGotMessagingMessageFromUser: "{name} sentis mesaĝon al vi."
   youGotMessagingMessageFromGroup: "Retbabilan mesaĝon oni sendis al la grupo {name}"
@@ -1065,8 +891,4 @@ _deck:
     antenna: "Antenoj"
     list: "Listoj"
     mentions: "Al vi"
-<<<<<<< HEAD
-    direct: "Notoj rektaj"
-=======
     direct: "Rekte"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb

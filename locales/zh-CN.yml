@@ -784,12 +784,6 @@ translate: "翻译"
 translatedFrom: "从 {x} 翻译"
 accountDeletionInProgress: "正在删除账户"
 usernameInfo: "在服务器上唯一标识您的帐户的名称。您可以使用字母 (a ~ z, A ~ Z)、数字 (0 ~ 9) 和下划线 (_)。用户名以后不能更改。"
-<<<<<<< HEAD
-keepCw: "保留CW"
-pubSub: "Pub/Sub账户"
-resolved: "已解决"
-unresolved: "未解决"
-=======
 aiChanMode: "小蓝模式"
 keepCw: "保留CW"
 pubSub: "Pub/Sub账户"
@@ -807,7 +801,6 @@ _signup:
   almostThere: "即将完成"
   emailAddressInfo: "请输入您所使用的电子邮件地址"
   emailSent: "已将确认邮件发送至您输入的电子邮件地址 ({email})。请访问电子邮件中的链接以完成帐户创建。"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 _accountDelete:
   accountDelete: "删除帐户"
   mayTakeTime: "删除账号是一个性能损耗较大的处理，如果账号持有的内容数量和上传的文件数量较多的话，完成需要花费一段时间。"
@@ -1194,11 +1187,7 @@ _widgets:
   jobQueue: "作业队列"
   serverMetric: "服务器监控"
   aiscript: "AiScript控制台"
-<<<<<<< HEAD
-  aichan: "蓝"
-=======
   aichan: "小蓝"
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 _cw:
   hide: "隐藏"
   show: "查看更多"

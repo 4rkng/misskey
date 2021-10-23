@@ -184,17 +184,10 @@
 		"parse5": "6.0.1",
 		"pg": "8.7.1",
 		"portscanner": "2.2.0",
-<<<<<<< HEAD
-		"postcss": "8.3.6",
-		"postcss-loader": "6.1.1",
-		"prismjs": "1.24.1",
-		"private-ip": "2.2.1",
-=======
 		"postcss": "8.3.9",
 		"postcss-loader": "6.2.0",
 		"prismjs": "1.25.0",
 		"private-ip": "2.3.0",
->>>>>>> a1af83c0ab30c01fa3a0990b1486987e536d46fb
 		"probe-image-size": "7.2.1",
 		"promise-limit": "2.7.0",
 		"pug": "3.0.2",

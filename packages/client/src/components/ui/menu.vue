@@ -280,12 +280,11 @@ export default defineComponent({
 
 	> .divider {
 		margin: 8px 0;
-		height: 1px;
-		background: var(--divider);
+		border-top: solid 0.5px var(--divider);
 	}
 
 	&.asDrawer {
-		padding: 12px 0;
+		padding: 12px 0 calc(env(safe-area-inset-bottom, 0px) + 12px) 0;
 		width: 100%;
 
 		> .item {

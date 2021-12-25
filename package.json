@@ -8,6 +8,7 @@
 		"url": "https://github.com/4rkng/nagisky.git"
 	},
 	"private": true,
+	"type":"module",
 	"scripts": {
 		"postinstall": "node ./scripts/install-packages.js",
 		"build": "node ./scripts/build.js",

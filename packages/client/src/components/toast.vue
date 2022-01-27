@@ -1,6 +1,6 @@
 <template>
 <div class="mk-toast">
-	<transition name="toast" appear @after-leave="emit('closed')">
+	<transition :name="$store.state.animation ? 'toast' : ''" appear @after-leave="emit('closed')">
 		<div v-if="showing" class="body _acrylic" :style="{ zIndex }">
 			<div class="message">
 				{{ message }}
@@ -26,7 +26,7 @@ const showing = ref(true);
 const zIndex = os.claimZIndex('high');
 
 onMounted(() => {
-	setTimeout(() => {
+	window.setTimeout(() => {
 		showing.value = false;
 	}, 4000);
 });

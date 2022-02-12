@@ -1,7 +1,7 @@
 {
 	"name": "nagisky-powerd-by-misskey",
 	"author": "Rikunagi Hiragi <4rkng@protonmail.com>",
-	"version": "12.106.0-rk-build1",
+	"version": "12.107.0-rk-build1",
 	"codename": "indigo",
 	"repository": {
 		"type": "git",

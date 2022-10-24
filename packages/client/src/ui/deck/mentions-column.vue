@@ -9,7 +9,7 @@
 <script lang="ts" setup>
 import { } from 'vue';
 import XColumn from './column.vue';
-import XNotes from '@/components/notes.vue';
+import XNotes from '@/components/MkNotes.vue';
 import { Column } from './deck-store';
 
 defineProps<{
@@ -18,7 +18,7 @@ defineProps<{
 }>();
 
 const emit = defineEmits<{
-	(e: 'parent-focus', direction: 'up' | 'down' | 'left' | 'right'): void;
+	(ev: 'parent-focus', direction: 'up' | 'down' | 'left' | 'right'): void;
 }>();
 
 const pagination = {

@@ -13,7 +13,7 @@ export type WidgetComponentProps<P extends Record<string, unknown>> = {
 };
 
 export type WidgetComponentEmits<P extends Record<string, unknown>> = {
-	(e: 'updateProps', props: P);
+	(ev: 'updateProps', props: P);
 };
 
 export type WidgetComponentExpose = {
@@ -36,8 +36,9 @@ export const useWidgetPropsManager = <F extends Form & Record<string, { default:
 
 	const mergeProps = () => {
 		for (const prop of Object.keys(propsDef)) {
-			if (widgetProps.hasOwnProperty(prop)) continue;
-			widgetProps[prop] = propsDef[prop].default;
+			if (typeof widgetProps[prop] === 'undefined') {
+				widgetProps[prop] = propsDef[prop].default;
+			}
 		}
 	};
 	watch(widgetProps, () => {
@@ -45,7 +46,7 @@ export const useWidgetPropsManager = <F extends Form & Record<string, { default:
 	}, { deep: true, immediate: true, });
 
 	const save = throttle(3000, () => {
-		emit('updateProps', widgetProps)
+		emit('updateProps', widgetProps);
 	});
 
 	const configure = async () => {

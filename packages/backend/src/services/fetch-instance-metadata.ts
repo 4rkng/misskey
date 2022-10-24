@@ -1,5 +1,6 @@
 import { DOMWindow, JSDOM } from 'jsdom';
 import fetch from 'node-fetch';
+import tinycolor from 'tinycolor2';
 import { getJson, getHtml, getAgentByUrl } from '@/misc/fetch.js';
 import { Instance } from '@/models/entities/instance.js';
 import { Instances } from '@/models/index.js';
@@ -33,7 +34,7 @@ export async function fetchInstanceMetadata(instance: Instance, force = false): 
 		const [favicon, icon, themeColor, name, description] = await Promise.all([
 			fetchFaviconUrl(instance, dom).catch(() => null),
 			fetchIconUrl(instance, dom, manifest).catch(() => null),
-			getThemeColor(dom, manifest).catch(() => null),
+			getThemeColor(info, dom, manifest).catch(() => null),
 			getSiteName(info, dom, manifest).catch(() => null),
 			getDescription(info, dom, manifest).catch(() => null),
 		]);
@@ -207,17 +208,12 @@ async function fetchIconUrl(instance: Instance, doc: DOMWindow['document'] | nul
 	return null;
 }
 
-async function getThemeColor(doc: DOMWindow['document'] | null, manifest: Record<string, any> | null): Promise<string | null> {
-	if (doc) {
-		const themeColor = doc.querySelector('meta[name="theme-color"]')?.getAttribute('content');
+async function getThemeColor(info: NodeInfo | null, doc: DOMWindow['document'] | null, manifest: Record<string, any> | null): Promise<string | null> {
+	const themeColor = info?.metadata?.themeColor || doc?.querySelector('meta[name="theme-color"]')?.getAttribute('content') || manifest?.theme_color;
 
-		if (themeColor) {
-			return themeColor;
-		}
-	}
-
-	if (manifest) {
-		return manifest.theme_color;
+	if (themeColor) {
+		const color = new tinycolor(themeColor);
+		if (color.isValid()) return color.toHexString();
 	}
 
 	return null;

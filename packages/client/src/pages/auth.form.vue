@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import MkButton from '@/components/ui/button.vue';
+import MkButton from '@/components/MkButton.vue';
 import * as os from '@/os';
 
 export default defineComponent({
@@ -32,7 +32,7 @@ export default defineComponent({
 	computed: {
 		name(): string {
 			const el = document.createElement('div');
-			el.textContent = this.app.name
+			el.textContent = this.app.name;
 			return el.innerHTML;
 		},
 		app(): any {

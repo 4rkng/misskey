@@ -67,11 +67,11 @@ import {
   Tooltip,
   SubTitle
 } from 'chart.js';
-import MkButton from '@/components/ui/button.vue';
+import MkButton from '@/components/MkButton.vue';
 import MkSelect from '@/components/form/select.vue';
 import MkInput from '@/components/form/input.vue';
-import MkContainer from '@/components/ui/container.vue';
-import MkFolder from '@/components/ui/folder.vue';
+import MkContainer from '@/components/MkContainer.vue';
+import MkFolder from '@/components/MkFolder.vue';
 import MkwFederation from '../../widgets/federation.vue';
 import { version, url } from '@/config';
 import bytes from '@/filters/bytes';
@@ -132,7 +132,7 @@ export default defineComponent({
 			overviewHeight: '1fr',
 			queueHeight: '1fr',
 			paused: false,
-		}
+		};
 	},
 
 	computed: {

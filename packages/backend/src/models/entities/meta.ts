@@ -1,6 +1,6 @@
 import { Entity, Column, PrimaryColumn, ManyToOne, JoinColumn } from 'typeorm';
-import { User } from './user.js';
 import { id } from '../id.js';
+import { User } from './user.js';
 import { Clip } from './clip.js';
 
 @Entity()
@@ -78,7 +78,7 @@ export class Meta {
 	public blockedHosts: string[];
 
 	@Column('varchar', {
-		length: 512, array: true, default: '{"/featured", "/channels", "/explore", "/pages", "/about-misskey"}',
+		length: 512, array: true, default: '{/featured,/channels,/explore,/pages,/about-misskey}',
 	})
 	public pinnedPages: string[];
 
@@ -187,6 +187,28 @@ export class Meta {
 		nullable: true,
 	})
 	public recaptchaSecretKey: string | null;
+
+	@Column('enum', {
+		enum: ['none', 'all', 'local', 'remote'],
+		default: 'none',
+	})
+	public sensitiveMediaDetection: 'none' | 'all' | 'local' | 'remote';
+
+	@Column('enum', {
+		enum: ['medium', 'low', 'high', 'veryLow', 'veryHigh'],
+		default: 'medium',
+	})
+	public sensitiveMediaDetectionSensitivity: 'medium' | 'low' | 'high' | 'veryLow' | 'veryHigh';
+
+	@Column('boolean', {
+		default: false,
+	})
+	public setSensitiveFlagAutomatically: boolean;
+
+	@Column('boolean', {
+		default: false,
+	})
+	public enableSensitiveMediaDetectionForVideos: boolean;
 
 	@Column('integer', {
 		default: 1024,
@@ -346,14 +368,12 @@ export class Meta {
 
 	@Column('varchar', {
 		length: 8192,
-		default: null,
 		nullable: true,
 	})
 	public defaultLightTheme: string | null;
 
 	@Column('varchar', {
 		length: 8192,
-		default: null,
 		nullable: true,
 	})
 	public defaultDarkTheme: string | null;
@@ -429,4 +449,14 @@ export class Meta {
 		default: true,
 	})
 	public objectStorageS3ForcePathStyle: boolean;
+
+	@Column('boolean', {
+		default: false,
+	})
+	public enableIpLogging: boolean;
+
+	@Column('boolean', {
+		default: true,
+	})
+	public enableActiveEmailValidation: boolean;
 }

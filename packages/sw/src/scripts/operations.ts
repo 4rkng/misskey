@@ -2,8 +2,6 @@
  * Operations
  * 各種操作
  */
-declare var self: ServiceWorkerGlobalScope;
-
 import * as Misskey from 'misskey-js';
 import { SwMessage, swMessageOrderType } from '@/types';
 import { acct as getAcct } from '@/filters/user';
@@ -29,18 +27,15 @@ export function openNote(noteId: string, loginId: string) {
 	return openClient('push', `/notes/${noteId}`, loginId, { noteId });
 }
 
-export async function openChat(body: any, loginId: string) {
-	if (body.groupId === null) {
-		return openClient('push', `/my/messaging/${getAcct(body.user)}`, loginId, { body });
-	} else {
-		return openClient('push', `/my/messaging/group/${body.groupId}`, loginId, { body });
-	}
+// noteIdからノートを開く
+export function openAntenna(antennaId: string, loginId: string) {
+	return openClient('push', `/timeline/antenna/${antennaId}`, loginId, { antennaId });
 }
 
 // post-formのオプションから投稿フォームを開く
 export async function openPost(options: any, loginId: string) {
 	// クエリを作成しておく
-	let url = `/share?`;
+	let url = '/share?';
 	if (options.initialText) url += `text=${options.initialText}&`;
 	if (options.reply) url += `replyId=${options.reply.id}&`;
 	if (options.renote) url += `renoteId=${options.renote.id}&`;
@@ -56,12 +51,12 @@ export async function openClient(order: swMessageOrderType, url: string, loginId
 		return client;
 	}
 
-	return self.clients.openWindow(getUrlWithLoginId(url, loginId));
+	return globalThis.clients.openWindow(getUrlWithLoginId(url, loginId));
 }
 
 export async function findClient() {
-	const clients = await self.clients.matchAll({
-		type: 'window'
+	const clients = await globalThis.clients.matchAll({
+		type: 'window',
 	});
 	for (const c of clients) {
 		if (c.url.indexOf('?zen') < 0) return c;

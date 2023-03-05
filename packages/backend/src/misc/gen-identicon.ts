@@ -3,9 +3,9 @@
  * https://en.wikipedia.org/wiki/Identicon
  */
 
-import { WriteStream } from 'node:fs';
 import * as p from 'pureimage';
 import gen from 'random-seed';
+import type { WriteStream } from 'node:fs';
 
 const size = 128; // px
 const n = 5; // resolution
@@ -51,7 +51,7 @@ export function genIdenticon(seed: string, stream: WriteStream): Promise<void> {
 	bg.addColorStop(0, bgColors[0]);
 	bg.addColorStop(1, bgColors[1]);
 
-	ctx.fillStyle = bg;
+	ctx.fillStyle = bg as any;
 	ctx.beginPath();
 	ctx.fillRect(0, 0, size, size);
 

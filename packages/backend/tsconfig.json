@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"allowJs": true,
-		"noEmitOnError": false,
+		"noEmitOnError": true,
 		"noImplicitAny": true,
 		"noImplicitReturns": true,
 		"noUnusedParameters": false,
@@ -10,7 +10,7 @@
 		"declaration": false,
 		"sourceMap": false,
 		"target": "es2021",
-		"module": "es2020",
+		"module": "esnext",
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
 		"removeComments": false,
@@ -18,6 +18,7 @@
 		"strict": true,
 		"strictNullChecks": true,
 		"strictPropertyInitialization": false,
+		"skipLibCheck": true,
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
 		"resolveJsonModule": true,
@@ -25,9 +26,7 @@
 		"rootDir": "./src",
 		"baseUrl": "./",
 		"paths": {
-			"@/*": [
-				"./src/*"
-			]
+			"@/*": ["./src/*"]
 		},
 		"outDir": "./built",
 		"types": [
@@ -45,4 +44,7 @@
 	"include": [
 		"./src/**/*.ts"
 	],
+	"exclude": [
+		"./src/**/*.test.ts"
+	]
 }

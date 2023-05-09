@@ -37,6 +37,7 @@ import { definePageMetadata } from '@/scripts/page-metadata';
 import { i18n } from '@/i18n';
 import { userPage } from '@/filters/user';
 import MkUserCardMini from '@/components/MkUserCardMini.vue';
+import { userListsCache } from '@/cache';
 
 const props = defineProps<{
 	listId: string;
@@ -97,6 +98,8 @@ async function renameList() {
 		name: name,
 	});
 
+	userListsCache.delete();
+
 	list.name = name;
 }
 
@@ -107,10 +110,10 @@ async function deleteList() {
 	});
 	if (canceled) return;
 
-	await os.api('users/lists/delete', {
+	await os.apiWithDialog('users/lists/delete', {
 		listId: list.id,
 	});
-	os.success();
+	userListsCache.delete();
 	mainRouter.push('/my/lists');
 }
 
@@ -128,7 +131,7 @@ definePageMetadata(computed(() => list ? {
 
 <style lang="scss" module>
 .main {
-	min-height: calc(var(--containerHeight) - (var(--stickyTop, 0px) + var(--stickyBottom, 0px)));
+	min-height: calc(100cqh - (var(--stickyTop, 0px) + var(--stickyBottom, 0px)));
 }
 
 .userItem {

@@ -59,8 +59,10 @@ export class RoleEntityService {
 			isPublic: role.isPublic,
 			isAdministrator: role.isAdministrator,
 			isModerator: role.isModerator,
+			isExplorable: role.isExplorable,
 			asBadge: role.asBadge,
 			canEditMembersByModerator: role.canEditMembersByModerator,
+			displayOrder: role.displayOrder,
 			policies: policies,
 			usersCount: assignedCount,
 		});

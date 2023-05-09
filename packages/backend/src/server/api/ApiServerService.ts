@@ -89,7 +89,7 @@ export class ApiServerService {
 					Params: { endpoint: string; },
 					Body: Record<string, unknown>,
 					Querystring: Record<string, unknown>,
-				}>('/' + endpoint.name, { bodyLimit: 1024 * 32 }, async (request, reply) => {
+				}>('/' + endpoint.name, { bodyLimit: 1024 * 1024 }, async (request, reply) => {
 					if (request.method === 'GET' && !endpoint.meta.allowGet) {
 						reply.code(405);
 						reply.send();
@@ -167,7 +167,7 @@ export class ApiServerService {
 		// Make sure any unknown path under /api returns HTTP 404 Not Found,
 		// because otherwise ClientServerService will return the base client HTML
 		// page with HTTP 200.
-		fastify.get('*', (request, reply) => {
+		fastify.get('/*', (request, reply) => {
 			reply.code(404);
 			// Mock ApiCallService.send's error handling
 			reply.send({

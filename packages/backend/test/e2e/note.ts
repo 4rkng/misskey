@@ -4,13 +4,15 @@ import * as assert from 'assert';
 import { Note } from '@/models/entities/Note.js';
 import { signup, post, uploadUrl, startServer, initTestDb, api, uploadFile } from '../utils.js';
 import type { INestApplicationContext } from '@nestjs/common';
+import type * as misskey from 'misskey-js';
+import { MAX_NOTE_TEXT_LENGTH } from '@/const.js';
 
 describe('Note', () => {
 	let app: INestApplicationContext;
 	let Notes: any;
 
-	let alice: any;
-	let bob: any;
+	let alice: misskey.entities.MeSignup;
+	let bob: misskey.entities.MeSignup;
 
 	beforeAll(async () => {
 		app = await startServer();
@@ -163,7 +165,7 @@ describe('Note', () => {
 
 	test('文字数ぎりぎりで怒られない', async () => {
 		const post = {
-			text: '!'.repeat(3000),
+			text: '!'.repeat(MAX_NOTE_TEXT_LENGTH), // 3000文字
 		};
 		const res = await api('/notes/create', post, alice);
 		assert.strictEqual(res.status, 200);
@@ -171,7 +173,7 @@ describe('Note', () => {
 
 	test('文字数オーバーで怒られる', async () => {
 		const post = {
-			text: '!'.repeat(3001),
+			text: '!'.repeat(MAX_NOTE_TEXT_LENGTH + 1), // 3001文字
 		};
 		const res = await api('/notes/create', post, alice);
 		assert.strictEqual(res.status, 400);
@@ -378,7 +380,7 @@ describe('Note', () => {
 					},
 				},
 			}, alice);
-			
+
 			assert.strictEqual(res.status, 200);
 
 			const assign = await api('admin/roles/assign', {
@@ -540,6 +542,61 @@ describe('Note', () => {
 			}, alice);
 
 			assert.strictEqual(res.status, 400);
+		});
+
+		test('センシティブな投稿はhomeになる (単語指定)', async () => {
+			const sensitive = await api('admin/update-meta', {
+				sensitiveWords: [
+					"test",
+				]
+			}, alice);
+
+			assert.strictEqual(sensitive.status, 204);
+
+			await new Promise(x => setTimeout(x, 2));
+
+			const note1 = await api('/notes/create', {
+				text: 'hogetesthuge',
+			}, alice);
+
+			assert.strictEqual(note1.status, 200);
+			assert.strictEqual(note1.body.createdNote.visibility, 'home');
+
+		});
+
+		test('センシティブな投稿はhomeになる (正規表現)', async () => {
+			const sensitive = await api('admin/update-meta', {
+				sensitiveWords: [
+					"/Test/i",
+				]
+			}, alice);
+
+			assert.strictEqual(sensitive.status, 204);
+
+			const note2 = await api('/notes/create', {
+				text: 'hogetesthuge',
+			}, alice);
+
+			assert.strictEqual(note2.status, 200);
+			assert.strictEqual(note2.body.createdNote.visibility, 'home');
+		});
+
+		test('センシティブな投稿はhomeになる (スペースアンド)', async () => {
+			const sensitive = await api('admin/update-meta', {
+				sensitiveWords: [
+					"Test hoge"
+				]
+			}, alice);
+
+			assert.strictEqual(sensitive.status, 204);
+
+			const note2 = await api('/notes/create', {
+				text: 'hogeTesthuge',
+			}, alice);
+
+			assert.strictEqual(note2.status, 200);
+			assert.strictEqual(note2.body.createdNote.visibility, 'home');
+
 		});
 	});
 

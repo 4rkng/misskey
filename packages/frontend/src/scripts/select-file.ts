@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 import { DriveFile } from 'misskey-js/built/entities';
 import * as os from '@/os';
-import { stream } from '@/stream';
+import { useStream } from '@/stream';
 import { i18n } from '@/i18n';
 import { defaultStore } from '@/store';
 import { uploadFile } from '@/scripts/upload';
@@ -12,7 +12,8 @@ export function chooseFileFromPc(multiple: boolean, keepOriginal = false): Promi
 		input.type = 'file';
 		input.multiple = multiple;
 		input.onchange = () => {
-			const promises = Array.from(input.files).map(file => uploadFile(file, defaultStore.state.uploadFolder, undefined, keepOriginal));
+			if (!input.files) return res([]);
+			const promises = Array.from(input.files, file => uploadFile(file, defaultStore.state.uploadFolder, undefined, keepOriginal));
 
 			Promise.all(promises).then(driveFiles => {
 				res(driveFiles);
@@ -51,7 +52,7 @@ export function chooseFileFromUrl(): Promise<DriveFile> {
 
 			const marker = Math.random().toString(); // TODO: UUIDとか使う
 
-			const connection = stream.useChannel('main');
+			const connection = useStream().useChannel('main');
 			connection.on('urlUploadFinished', urlResponse => {
 				if (urlResponse.marker === marker) {
 					res(urlResponse.file);
